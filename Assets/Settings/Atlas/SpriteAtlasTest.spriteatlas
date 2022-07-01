@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteAtlasTest
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 731036141, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 873220105, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 2127132941, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1723909504, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 2080899019, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 2041908113, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -35514106, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1992586703, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1727884771, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1769742727, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -967137755, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1843505265, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -1968806928, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -2104406858, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1781084718, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -277621054, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1117076439, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 481908217, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: -925195883, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  - {fileID: 1632447632, guid: 012d09d664d01f440bc6d464c1526e01, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ChillingPalette_6
+  - ChillingPalette_5
+  - ChillingPalette_4
+  - ChillingPalette_3
+  - ChillingPalette_2
+  - ChillingPalette_1
+  - ChillingPalette_0
+  - ChillingPalette_9
+  - ChillingPalette_8
+  - ChillingPalette_12
+  - ChillingPalette_13
+  - ChillingPalette_10
+  - ChillingPalette_11
+  - ChillingPalette_16
+  - ChillingPalette_17
+  - ChillingPalette_14
+  - ChillingPalette_15
+  - ChillingPalette_18
+  - ChillingPalette_19
+  - ChillingPalette_7
+  m_RenderDataMap: {}
+  m_Tag: SpriteAtlasTest
+  m_IsVariant: 0

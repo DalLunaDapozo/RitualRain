@@ -3,12 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RitualRoom
+  - Corridor
+  - SecondFloorRoom
+  - Teleport
+  - LivingRoom
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Colliders
   - Water
   - UI
   - 
