@@ -1,7 +1,6 @@
 using UnityEngine;
 using System;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class EntityCurrentRoom : MonoBehaviour
 {
     public CurrentRoom entityCurrentRoom;
@@ -10,11 +9,13 @@ public class EntityCurrentRoom : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        CheckCollision(collision, "RitualRoom", CurrentRoom.RitualRoom);
-        CheckCollision(collision, "Corridor", CurrentRoom.Corridor);
-        CheckCollision(collision, "SecondFloorRoom", CurrentRoom.SecondFloorRoom);
-        CheckCollision(collision, "LivingRoom", CurrentRoom.LivingRoom);
+        AllTheRoomsInTheGame(collision);
+        CheckTeleportCollision(collision);
+    }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        AllTheRoomsInTheGame(collision);
         CheckTeleportCollision(collision);
     }
 
@@ -22,6 +23,22 @@ public class EntityCurrentRoom : MonoBehaviour
     {
         if (collision.CompareTag("Teleport"))
             OntouchedTeleport?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void AllTheRoomsInTheGame(Collider2D collision)
+    {
+        CheckCollision(collision, "RitualRoom", CurrentRoom.RitualRoom);
+        CheckCollision(collision, "Corridor", CurrentRoom.Corridor);
+        CheckCollision(collision, "SecondFloorRoom", CurrentRoom.SecondFloorRoom);
+        CheckCollision(collision, "LivingRoom", CurrentRoom.LivingRoom);
+        CheckCollision(collision, "UpstairsBedroom", CurrentRoom.UpstairsBedroom);
+        CheckCollision(collision, "Kitchen", CurrentRoom.Kitchen);
+        CheckCollision(collision, "Storage", CurrentRoom.Storage);
+        CheckCollision(collision, "Backyard", CurrentRoom.Backyard);
+        CheckCollision(collision, "Library", CurrentRoom.Library);
+        CheckCollision(collision, "Bedroom", CurrentRoom.Bedroom);
+        CheckCollision(collision, "Bathroom", CurrentRoom.Bathroom);
+        CheckCollision(collision, "Closet", CurrentRoom.Closet);
     }
 
     private void CheckCollision(Collider2D collision, string tag, CurrentRoom newCurrentRoom)
@@ -36,4 +53,5 @@ public class EntityCurrentRoom : MonoBehaviour
     }
 }
 
-public enum CurrentRoom {RitualRoom, Corridor, SecondFloorRoom, LivingRoom } 
+public enum CurrentRoom {RitualRoom, Corridor, SecondFloorRoom, LivingRoom, UpstairsBedroom, 
+                         Kitchen, Storage, Backyard, Bedroom, Closet, Library, Bathroom } 

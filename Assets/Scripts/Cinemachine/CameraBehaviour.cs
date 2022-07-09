@@ -4,15 +4,20 @@ public class CameraBehaviour : MonoBehaviour
 {
     [SerializeField] EntityCurrentRoom player;
 
-    private bool isFollowingPlayer = true;
+    public bool canFollowPlayer;
+
+    private void Start()
+    {
+        canFollowPlayer = false;
+    }
 
     private void Update()
     {
-        SwitchIsFollowingPlayer();
         CameraBehaviourMethod();
     }
 
-    private void SwitchIsFollowingPlayer()
+    //METODO QUE SWITCHEA EL FOLLOW PLAYER CUANDO SE PRENDE LA LUZ (FEATURE VIEJO)
+   /* private void SwitchIsFollowingPlayer()
     {
         if (InputManager.GetInstance().GetLighterPressed())
         {
@@ -21,10 +26,10 @@ public class CameraBehaviour : MonoBehaviour
             else
                 isFollowingPlayer = false;
         }
-    }
+    }*/
     private void CameraBehaviourMethod()
     {
-        if (isFollowingPlayer)
+        if (canFollowPlayer)
             CameraManager.Instance.FollowPlayer();
         else
             CameraManager.Instance.SetCameraState(player.entityCurrentRoom);

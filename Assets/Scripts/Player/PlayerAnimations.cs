@@ -6,8 +6,9 @@ public class PlayerAnimations : MonoBehaviour
 
     [SerializeField] private float VelocidadDeLaAnimacion_Caminar;
     [SerializeField] private float VelocidadDeLaAnimacion_Idle;
+    [SerializeField] private float VelocidadDeLaAnimacion_Stealth;
 
-    private bool isWalking;
+    private bool isMoving;
 
     private void Awake()
     {
@@ -18,8 +19,10 @@ public class PlayerAnimations : MonoBehaviour
     {
         SetAnimatorFloat("VelocidadDeLaAnimacion_Caminar", VelocidadDeLaAnimacion_Caminar);       
         SetAnimatorFloat("VelocidadDeLaAnimacion_Idle", VelocidadDeLaAnimacion_Idle);
+        SetAnimatorFloat("VelocidadDeLaAnimacion_Stealth", VelocidadDeLaAnimacion_Stealth);
 
-        SetAnimatorBool("isWalking", isWalking);
+        SetAnimatorBool("isMoving", isMoving);
+        SetAnimatorBool("Stealth", !LighterController.lightIsOn);
 
         CheckIfInputAxisisPressed();
     }
@@ -36,8 +39,8 @@ public class PlayerAnimations : MonoBehaviour
     private void CheckIfInputAxisisPressed()
     {
         if (InputManager.GetInstance().GetMoveDirection() != Vector2.zero)
-            isWalking = true;
+            isMoving = true;
         else
-            isWalking = false;        
+            isMoving = false;        
     }
 }

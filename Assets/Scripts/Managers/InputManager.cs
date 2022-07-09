@@ -5,8 +5,8 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     private Vector2 moveDirection = Vector2.zero;
-    
-    private bool interactPressed = false;
+
+    public bool interactPressed { get; private set; }
     private bool lighterPressed = false;
 
     private static InputManager instance;
@@ -15,14 +15,14 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         if (instance != null)
-             Debug.LogError("Found more than one Input Manager in the scene.");
+            Debug.LogError("Found more than one Input Manager in the scene.");
         instance = this;
 
         input = new PlayerInputActions();
 
         SubscribeToInputs();
     }
-    
+
     public void EnableInput()
     {
         input.Enable();
@@ -30,6 +30,18 @@ public class InputManager : MonoBehaviour
     public void DisableInput()
     {
         input.Disable();
+    }
+
+    public void EnterCutSceneMode()
+    {
+        input.Gameplay.Movement.performed -= MovePressed;
+        input.Gameplay.Lighter.performed -= LighterButtonPressed;
+    }
+
+    public void ExitCutSceneMode()
+    {
+        input.Gameplay.Movement.performed += MovePressed;
+        input.Gameplay.Lighter.performed += LighterButtonPressed;
     }
 
     public static InputManager GetInstance()
@@ -44,35 +56,27 @@ public class InputManager : MonoBehaviour
     public void InteractButtonPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
-        {
             interactPressed = true;
-        }
-        else if (context.canceled)
-        {
+        if(context.canceled)
             interactPressed = false;
-        }
     }
-   
-    
+ 
     public void LighterButtonPressed(InputAction.CallbackContext context)
     {
-        lighterPressed = true;
+        if (context.performed)
+            lighterPressed = true;
+        if (context.canceled)
+            lighterPressed = false;
     }
-    public void LighterButtonUnPressed(InputAction.CallbackContext context)
-    {
-        lighterPressed = false;
-    }
-    
+
     public Vector2 GetMoveDirection()
     {
         return moveDirection;
     }
-    
+
     public bool GetInteractPressed()
     {
-        bool result = interactPressed;
-        interactPressed = false;
-        return result;
+        return interactPressed;
     }
     public bool GetLighterPressed()
     {
@@ -85,12 +89,28 @@ public class InputManager : MonoBehaviour
     {
         interactPressed = false;
     }
-    
+
+    public void InteractTrue()
+    {
+        interactPressed = true;
+    }
+    public void InteractFalse()
+    {
+        interactPressed = false;
+    }
     private void SubscribeToInputs()
     {
         input.Gameplay.Movement.performed += MovePressed;
         input.Gameplay.Lighter.performed += LighterButtonPressed;
-        input.Gameplay.Lighter.canceled += LighterButtonUnPressed;
+        input.Gameplay.Interact.performed += ctx => InteractTrue();
+        input.Gameplay.Interact.canceled += ctx => InteractFalse();
+    }
+
+    private void OnDestroy()
+    {
+        input.Gameplay.Movement.performed -= MovePressed;
+        input.Gameplay.Lighter.performed -= LighterButtonPressed;
+        input.Gameplay.Interact.performed -= InteractButtonPressed; 
     }
 
 }

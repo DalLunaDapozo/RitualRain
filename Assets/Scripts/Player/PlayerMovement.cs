@@ -6,7 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    [SerializeField] private float VelocidadDeMovimiento;
+    private float movementSpeed;
+
+    [SerializeField] private float VelocidadDeMovimientoNormal;
+    [SerializeField] private float VelocidadDeMovimientoEnStealth;
 
     private void Awake()
     {
@@ -15,15 +18,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.GetInstance().GetLighterPressed())
-        {
-            Debug.Log("DALEEE");
-        }
+        ChangeMovementSpeedDependingIfStealth();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(InputManager.GetInstance().GetMoveDirection().x, 
-                                  InputManager.GetInstance().GetMoveDirection().y) * VelocidadDeMovimiento * Time.deltaTime;
+        rb.velocity = InputManager.GetInstance().GetMoveDirection() * movementSpeed * Time.deltaTime;
+    }
+
+    
+    private void ChangeMovementSpeedDependingIfStealth()
+    {
+        if (LighterController.lightIsOn)
+            movementSpeed = VelocidadDeMovimientoNormal;
+        else
+            movementSpeed = VelocidadDeMovimientoEnStealth;
     }
 }

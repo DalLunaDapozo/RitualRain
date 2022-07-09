@@ -7,10 +7,14 @@ public class FlipX: MonoBehaviour
     public bool EsUnSprite;
     public bool FlipRespetandoElInput;
 
+    private Vector2 scale;
+
     private void Awake()
     {
         if(EsUnSprite)
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+        scale = transform.localScale;
     }
     private void Update()
     {
@@ -21,12 +25,12 @@ public class FlipX: MonoBehaviour
     {
         if (InputManager.GetInstance().GetMoveDirection().x < 0)
 
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-scale.x, scale.y);
 
 
         else if (InputManager.GetInstance().GetMoveDirection().x > 0)
 
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(scale.x, scale.y);
 
     }
 }

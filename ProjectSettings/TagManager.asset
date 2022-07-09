@@ -9,6 +9,14 @@ TagManager:
   - SecondFloorRoom
   - Teleport
   - LivingRoom
+  - UpstairsBedroom
+  - Kitchen
+  - Storage
+  - Backyard
+  - Bedroom
+  - Closet
+  - Library
+  - Bathroom
   layers:
   - Default
   - TransparentFX
@@ -16,7 +24,7 @@ TagManager:
   - Colliders
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -45,4 +53,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1175207667
     locked: 0

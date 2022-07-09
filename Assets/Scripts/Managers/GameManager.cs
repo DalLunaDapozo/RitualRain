@@ -1,12 +1,11 @@
 using System;
 using UnityEngine;
 
-[SerializeField] public enum GameState { Starting, Win, Lose}
+[SerializeField] public enum GameState { Starting, Spawning, Gameplay, Dialogue, Win, Lose}
 
 public class GameManager : Singleton<GameManager>
 {
     public static event Action<GameState> OnBeforeStateChanged;
-    public static event Action<GameState> OnAfterStateChanged;
 
     public GameState State { get; private set; }
 
@@ -23,7 +22,22 @@ public class GameManager : Singleton<GameManager>
 
                 InputManager.GetInstance().EnableInput();
 
+                ChangeState(GameState.Gameplay);
+
                 break;
+            
+            case GameState.Dialogue:
+
+                InputManager.GetInstance().EnterCutSceneMode();
+
+                break;
+
+            case GameState.Gameplay:
+
+                InputManager.GetInstance().ExitCutSceneMode();
+
+                break;
+
             case GameState.Win:
                 break;
             case GameState.Lose:

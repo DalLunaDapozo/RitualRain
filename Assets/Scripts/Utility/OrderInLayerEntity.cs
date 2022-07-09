@@ -5,16 +5,28 @@
 public class OrderInLayerEntity : MonoBehaviour
 {
 
-    SpriteRenderer sr;
+    [SerializeField] private int plusOrder;
 
-    void Start()
+    public SpriteRenderer sr;
+    private TrailRenderer trail;
+
+    public bool isSpriteRenderer;
+    public bool isTrailRenderer;
+
+    private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        if (isSpriteRenderer)
+            sr = GetComponent<SpriteRenderer>();
+        if (isTrailRenderer)
+            trail = GetComponent<TrailRenderer>();
     }
 
-   
     void Update()
     {
-        sr.sortingOrder = -(int)(transform.position.y * 100);
+        if (isSpriteRenderer)
+            sr.sortingOrder = -(int)(transform.position.y * 100) + plusOrder;
+ 
+        else if (isTrailRenderer)
+            trail.sortingOrder = -(int)(transform.position.y * 100) + plusOrder;     
     }
 }

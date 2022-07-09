@@ -16,8 +16,17 @@
                 },
                 {
                     "name": "Lighter",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "83401231-5a9b-4c3d-a8a7-0f984dcdb04f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "PassThrough",
+                    "id": "b5e93c20-45a7-4d11-9c02-557f9310f88a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -143,6 +152,17 @@
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Lighter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea62ec5c-73a8-47ac-bc7a-ca27f717b795",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
