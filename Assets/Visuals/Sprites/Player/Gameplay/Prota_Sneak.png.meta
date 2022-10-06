@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9369cb0d3b8625b4aa5ee697c21d3709
+guid: 8f70c06eb2ddf384aa4a017425ea3449
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,34 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RitualRoomAssets_0
+      name: Prota_Sneak_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 21
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5047846, y: 0.7543268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efdf82bf19146247a380e0c0eeacbc6
-      internalID: 1263676392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 26
-        width: 13
-        height: 12
+        x: 3
+        y: 0
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +118,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdd4523aec5bfa3448eaeb38820c0587
-      internalID: 2111784689
+      spriteID: c06af4988c71c354a972a8edea9b8521
+      internalID: -2119703576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_2
+      name: Prota_Sneak_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 11
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357d4cf66de33fe4191e40ddcf924b7d
+      internalID: 967769392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Sneak_2
       rect:
         serializedVersion: 2
         x: 35
-        y: 23
-        width: 28
-        height: 15
+        y: 0
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431820ebc6d459047aa0b166c5df2985
-      internalID: 1294697631
+      spriteID: 2bffe4edd975f814891038e665703f18
+      internalID: -829303871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_3
+      name: Prota_Sneak_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 10
-        width: 9
-        height: 5
+        x: 51
+        y: 0
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e53692410ba619a4399ee22d46636817
-      internalID: -1899083667
+      spriteID: d039124694d282b41bd84de8573e2300
+      internalID: -255253528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_4
+      name: Prota_Sneak_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 12
-        width: 6
-        height: 4
+        x: 67
+        y: 0
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbc560ffcfd2c446b48e594ea805388
-      internalID: 897043973
+      spriteID: f1d6b8fe6fbe95642bb3ebcda7733827
+      internalID: 2035652237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_5
+      name: Prota_Sneak_5
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 8
-        height: 9
+        x: 83
+        y: 0
+        width: 11
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +223,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514ec30da7266484f9e3dbec1f910ba6
-      internalID: 842154433
+      spriteID: 4be6c7feba6554e419be22c756bbc669
+      internalID: -639291057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Sneak_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 11
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d5a14cc6030c04cbdc141841ae73a2
+      internalID: 2099707592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Sneak_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 11
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c69ed9d755321b4d8b16853d9d6940d
+      internalID: -1201208892
       vertices: []
       indices: 
       edges: []
@@ -240,12 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RitualRoomAssets_3: -1899083667
-      RitualRoomAssets_0: 1263676392
-      RitualRoomAssets_4: 897043973
-      RitualRoomAssets_5: 842154433
-      RitualRoomAssets_2: 1294697631
-      RitualRoomAssets_1: 2111784689
+      Prota_Sneak_5: -639291057
+      Prota_Sneak_1: 967769392
+      Prota_Sneak_7: -1201208892
+      Prota_Sneak_3: -255253528
+      Prota_Sneak_4: 2035652237
+      Prota_Sneak_0: -2119703576
+      Prota_Sneak_6: 2099707592
+      Prota_Sneak_2: -829303871
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

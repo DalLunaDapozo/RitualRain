@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9369cb0d3b8625b4aa5ee697c21d3709
+guid: 5a15c685a66f94f4e9f766d53a33f783
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,118 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RitualRoomAssets_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 21
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5047846, y: 0.7543268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efdf82bf19146247a380e0c0eeacbc6
-      internalID: 1263676392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 26
-        width: 13
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdd4523aec5bfa3448eaeb38820c0587
-      internalID: 2111784689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 23
-        width: 28
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 431820ebc6d459047aa0b166c5df2985
-      internalID: 1294697631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 10
-        width: 9
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e53692410ba619a4399ee22d46636817
-      internalID: -1899083667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 12
-        width: 6
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dbc560ffcfd2c446b48e594ea805388
-      internalID: 897043973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_5
+      name: Prota_Idle_0
       rect:
         serializedVersion: 2
         x: 6
-        y: 3
-        width: 8
-        height: 9
+        y: 0
+        width: 9
+        height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +118,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514ec30da7266484f9e3dbec1f910ba6
-      internalID: 842154433
+      spriteID: 9e0557afd1b14ff489e6b484fd44f9db
+      internalID: -1406705233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 9
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7310b49ba4d298146b0254fec0c85fd4
+      internalID: -1263885453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 9
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808d1b5dd304e204d82376a782bd43ef
+      internalID: -1949117308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 9
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48942a8f32c5124ba7020b456ea4959
+      internalID: -1486572614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 9
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f88b28dbb3eb848b0248505aa51eda
+      internalID: -1590128948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 9
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9455c75000f7a9046bd1358f0eb3f74d
+      internalID: 1605006523
       vertices: []
       indices: 
       edges: []
@@ -240,12 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RitualRoomAssets_3: -1899083667
-      RitualRoomAssets_0: 1263676392
-      RitualRoomAssets_4: 897043973
-      RitualRoomAssets_5: 842154433
-      RitualRoomAssets_2: 1294697631
-      RitualRoomAssets_1: 2111784689
+      Prota_Idle_2: -1949117308
+      Prota_Idle_1: -1263885453
+      Prota_Idle_4: -1590128948
+      Prota_Idle_3: -1486572614
+      Prota_Idle_5: 1605006523
+      Prota_Idle_0: -1406705233
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9369cb0d3b8625b4aa5ee697c21d3709
+guid: 1912cfb8650695f4e88ad3f83ce7b1a3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,34 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RitualRoomAssets_0
+      name: Skull-Sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 21
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5047846, y: 0.7543268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efdf82bf19146247a380e0c0eeacbc6
-      internalID: 1263676392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 26
-        width: 13
-        height: 12
+        x: 1
+        y: 1
+        width: 19
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdd4523aec5bfa3448eaeb38820c0587
-      internalID: 2111784689
+      spriteID: 42938c69ddc54c64498640f8be5cb1d8
+      internalID: -2141277562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_2
+      name: Skull-Sheet_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 23
-        width: 28
-        height: 15
+        x: 22
+        y: 1
+        width: 19
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431820ebc6d459047aa0b166c5df2985
-      internalID: 1294697631
+      spriteID: 404cebe5e594ad5439af0963bed5b7ef
+      internalID: 681221974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_3
+      name: Skull-Sheet_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 10
-        width: 9
-        height: 5
+        x: 43
+        y: 1
+        width: 19
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e53692410ba619a4399ee22d46636817
-      internalID: -1899083667
+      spriteID: c38b484bf9567fe4281409be1ae7ce98
+      internalID: 605503952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_4
+      name: Skull-Sheet_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 12
-        width: 6
-        height: 4
+        x: 64
+        y: 1
+        width: 19
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbc560ffcfd2c446b48e594ea805388
-      internalID: 897043973
+      spriteID: 522a5a5bbb59367428a44bd5bed3c20f
+      internalID: 135306427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_5
+      name: Skull-Sheet_4
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 8
-        height: 9
+        x: 85
+        y: 1
+        width: 19
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +202,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514ec30da7266484f9e3dbec1f910ba6
-      internalID: 842154433
+      spriteID: bbc1eb895d6a21a43b3702edfd3398d1
+      internalID: -133221374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 19
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907dac5ea1170134088c505cb5f5cbac
+      internalID: -1179204068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 19
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb124a89f1d6dd4cb58da1d5f227aa9
+      internalID: -991182618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1
+        width: 19
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558addf6891c9b149a9279c6dc9d76e4
+      internalID: 1232149025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1
+        width: 19
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2be35556783284bbd53acd7cd7736c
+      internalID: -729960724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1
+        width: 19
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08769f7dac7da38439c52f415e2d9ece
+      internalID: -994948232
       vertices: []
       indices: 
       edges: []
@@ -240,12 +324,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RitualRoomAssets_3: -1899083667
-      RitualRoomAssets_0: 1263676392
-      RitualRoomAssets_4: 897043973
-      RitualRoomAssets_5: 842154433
-      RitualRoomAssets_2: 1294697631
-      RitualRoomAssets_1: 2111784689
+      Skull-Sheet_7: 1232149025
+      Skull-Sheet_3: 135306427
+      Skull-Sheet_8: -729960724
+      Skull-Sheet_1: 681221974
+      Skull-Sheet_0: -2141277562
+      Skull-Sheet_2: 605503952
+      Skull-Sheet_6: -991182618
+      Skull-Sheet_5: -1179204068
+      Skull-Sheet_9: -994948232
+      Skull-Sheet_4: -133221374
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

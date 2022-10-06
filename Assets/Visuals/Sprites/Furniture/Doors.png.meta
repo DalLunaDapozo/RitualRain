@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9369cb0d3b8625b4aa5ee697c21d3709
+guid: 00a8d6f6e8b710c489d2734c30029a90
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,127 +104,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RitualRoomAssets_0
+      name: Doors_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 21
-        width: 7
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5047846, y: 0.7543268}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efdf82bf19146247a380e0c0eeacbc6
-      internalID: 1263676392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_1
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 26
-        width: 13
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdd4523aec5bfa3448eaeb38820c0587
-      internalID: 2111784689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 23
-        width: 28
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 431820ebc6d459047aa0b166c5df2985
-      internalID: 1294697631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_3
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 10
-        width: 9
-        height: 5
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e53692410ba619a4399ee22d46636817
-      internalID: -1899083667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RitualRoomAssets_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 12
+        x: 9
+        y: 7
         width: 6
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 33
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbc560ffcfd2c446b48e594ea805388
-      internalID: 897043973
+      spriteID: 07d57b01d1064d84e8ffef0081a99f55
+      internalID: 1723469699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RitualRoomAssets_5
+      name: Doors_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 8
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 21
+        y: 7
+        width: 6
+        height: 33
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514ec30da7266484f9e3dbec1f910ba6
-      internalID: 842154433
+      spriteID: 545df46eb64545241bb5c81b9273b5cf
+      internalID: 1406706974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doors_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 7
+        width: 19
+        height: 27
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db176e959939f942b1d45486f8e5af1
+      internalID: 1019908783
       vertices: []
       indices: 
       edges: []
@@ -240,12 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RitualRoomAssets_3: -1899083667
-      RitualRoomAssets_0: 1263676392
-      RitualRoomAssets_4: 897043973
-      RitualRoomAssets_5: 842154433
-      RitualRoomAssets_2: 1294697631
-      RitualRoomAssets_1: 2111784689
+      Doors_1: 1406706974
+      Doors_2: 1019908783
+      Doors_0: 1723469699
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -17,6 +17,8 @@ TagManager:
   - Closet
   - Library
   - Bathroom
+  - Key
+  - Heart
   layers:
   - Default
   - TransparentFX
@@ -56,4 +58,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1175207667
+    locked: 0
+  - name: not_affect_by_lighter
+    uniqueID: 1774754187
     locked: 0

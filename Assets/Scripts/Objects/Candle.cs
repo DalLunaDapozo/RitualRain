@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Candle : MonoBehaviour
@@ -7,6 +6,10 @@ public class Candle : MonoBehaviour
     [SerializeField] private ActionTrigger action;
 
     private Animator anim;
+
+    public event EventHandler is_on_event;
+
+    public bool is_on;
 
     private void Awake()
     {
@@ -26,5 +29,7 @@ public class Candle : MonoBehaviour
     private void TurnOn()
     {
         anim.enabled = true;
+        is_on_event?.Invoke(this, EventArgs.Empty);
+        is_on = true;
     }
 }

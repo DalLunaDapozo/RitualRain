@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using System;
 
 public class InputManager : MonoBehaviour
 {
@@ -11,6 +11,8 @@ public class InputManager : MonoBehaviour
 
     private static InputManager instance;
     private PlayerInputActions input;
+
+    public EventHandler on_spawn_pressed;
 
     private void Awake()
     {

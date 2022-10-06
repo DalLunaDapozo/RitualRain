@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
 
-[SerializeField] public enum GameState { Starting, Spawning, Gameplay, Dialogue, Win, Lose}
+[SerializeField] public enum GameState { Starting, Spawning, Gameplay, CutScene, Dialogue, Win, Lose}
 
 public class GameManager : Singleton<GameManager>
 {
     public static event Action<GameState> OnBeforeStateChanged;
 
     public GameState State { get; private set; }
+
 
     private void Start() => ChangeState(GameState.Starting);
 
