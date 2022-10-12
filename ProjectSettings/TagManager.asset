@@ -62,3 +62,6 @@ TagManager:
   - name: not_affect_by_lighter
     uniqueID: 1774754187
     locked: 0
+  - name: not_light
+    uniqueID: 1437702443
+    locked: 0

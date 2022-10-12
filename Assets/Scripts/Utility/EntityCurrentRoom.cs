@@ -6,11 +6,13 @@ public class EntityCurrentRoom : MonoBehaviour
     public CurrentRoom entityCurrentRoom;
 
     public event EventHandler OntouchedTeleport;
+    public event EventHandler OnChangeRoom;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         AllTheRoomsInTheGame(collision);
         CheckTeleportCollision(collision);
+        OnChangeRoom?.Invoke(this, EventArgs.Empty);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
