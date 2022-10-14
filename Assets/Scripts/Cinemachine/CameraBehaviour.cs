@@ -29,9 +29,6 @@ public class CameraBehaviour : MonoBehaviour
     }*/
     private void CameraBehaviourMethod()
     {
-        if (canFollowPlayer)
-            CameraManager.Instance.FollowPlayer();
-        else
-            CameraManager.Instance.SetCameraState(player.entityCurrentRoom);
+        CameraManager.Instance.SetCameraState(player.entityCurrentRoom);
     }
 }

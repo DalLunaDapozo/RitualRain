@@ -81,6 +81,19 @@ AnimationClip:
     path: Visuals/PlayerSprite
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: -1403020349, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - time: 0.2
+      value: {fileID: -876049774, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - time: 0.4
+      value: {fileID: 539869998, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - time: 0.6
+      value: {fileID: 369387092, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    attribute: m_Sprite
+    path: Visuals/PlayerMirrorSprite
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -103,6 +116,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     - serializedVersion: 2
+      path: 91150087
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - serializedVersion: 2
       path: 4087200443
       attribute: 1
       script: {fileID: 0}
@@ -114,6 +134,10 @@ AnimationClip:
     - {fileID: -1263885453, guid: 5a15c685a66f94f4e9f766d53a33f783, type: 3}
     - {fileID: -1949117308, guid: 5a15c685a66f94f4e9f766d53a33f783, type: 3}
     - {fileID: -1486572614, guid: 5a15c685a66f94f4e9f766d53a33f783, type: 3}
+    - {fileID: -1403020349, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - {fileID: -876049774, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - {fileID: 539869998, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
+    - {fileID: 369387092, guid: ea9b258bee18f7845af26074a35de6c0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

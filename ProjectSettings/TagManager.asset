@@ -19,6 +19,9 @@ TagManager:
   - Bathroom
   - Key
   - Heart
+  - MirrorWorld_2
+  - MirrorWorld_1
+  - MirrorWorld_3
   layers:
   - Default
   - TransparentFX
@@ -27,8 +30,8 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
-  - 
+  - Mirror
+  - Player
   - 
   - 
   - 

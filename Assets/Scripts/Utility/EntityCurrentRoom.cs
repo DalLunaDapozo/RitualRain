@@ -41,6 +41,9 @@ public class EntityCurrentRoom : MonoBehaviour
         CheckCollision(collision, "Bedroom", CurrentRoom.Bedroom);
         CheckCollision(collision, "Bathroom", CurrentRoom.Bathroom);
         CheckCollision(collision, "Closet", CurrentRoom.Closet);
+        CheckCollision(collision, "MirrorWorld_1", CurrentRoom.MirrorWorld_1);
+        CheckCollision(collision, "MirrorWorld_2", CurrentRoom.MirrorWorld_2);
+        CheckCollision(collision, "MirrorWorld_3", CurrentRoom.MirrorWorld_3);
     }
 
     private void CheckCollision(Collider2D collision, string tag, CurrentRoom newCurrentRoom)
@@ -56,4 +59,4 @@ public class EntityCurrentRoom : MonoBehaviour
 }
 
 public enum CurrentRoom {RitualRoom, Corridor, SecondFloorRoom, LivingRoom, UpstairsBedroom, 
-                         Kitchen, Storage, Backyard, Bedroom, Closet, Library, Bathroom } 
+                         Kitchen, Storage, Backyard, Bedroom, Closet, Library, Bathroom, MirrorWorld_1, MirrorWorld_2, MirrorWorld_3} 
