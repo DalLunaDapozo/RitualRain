@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    public static event Action<GameState> OnBeforeStateChanged;
+    public event Action<GameState> OnBeforeStateChanged;
+
+    public bool testMode = false;
 
     public GameState State { get; private set; }
-
 
     private void Start() => ChangeState(GameState.Starting);
 
@@ -20,8 +21,6 @@ public class GameManager : Singleton<GameManager>
         switch (newState)
         {
             case GameState.Starting:
-
-                InputManager.GetInstance().EnableInput();
 
                 ChangeState(GameState.Gameplay);
 

@@ -5,6 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -34,8 +35,10 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueVariables dialogueVariables;
 
+    //ACTIONS
 
-    
+    public event EventHandler On_Dialogue_Exit;
+
     private void Awake()
     {
         if (instance != null)
@@ -105,6 +108,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
 
         GameManager.Instance.ChangeState(GameState.Gameplay);
+        On_Dialogue_Exit?.Invoke(this, EventArgs.Empty);
     }
 
     private void ContinueStory()

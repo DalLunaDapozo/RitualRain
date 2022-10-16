@@ -76,6 +76,11 @@ public class InputManager : MonoBehaviour
         return moveDirection;
     }
 
+    public void SetMovementToZero()
+    {
+        moveDirection = Vector2.zero;
+    }
+
     public bool GetInteractPressed()
     {
         return interactPressed;

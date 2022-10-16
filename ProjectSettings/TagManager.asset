@@ -22,6 +22,7 @@ TagManager:
   - MirrorWorld_2
   - MirrorWorld_1
   - MirrorWorld_3
+  - MirrorWorld_death
   layers:
   - Default
   - TransparentFX

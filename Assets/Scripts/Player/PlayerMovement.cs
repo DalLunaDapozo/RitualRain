@@ -26,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = InputManager.GetInstance().GetMoveDirection() * movementSpeed * Time.deltaTime;
     }
 
-    
+    public void SetMovementToZero()
+    {
+        InputManager.GetInstance().SetMovementToZero();
+    }
+
     private void ChangeMovementSpeedDependingIfStealth()
     {
         if (LighterController.lightIsOn)

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
 
     [SerializeField] private float VelocidadDeLaAnimacion_Caminar;
     [SerializeField] private float VelocidadDeLaAnimacion_Idle;
@@ -34,6 +34,11 @@ public class PlayerAnimations : MonoBehaviour
     private void SetAnimatorBool(string animationName, bool state)
     {
         animator.SetBool(animationName, state);
+    }
+
+    public void PlayAnimation(string name)
+    {
+        animator.Play(name);
     }
 
     private void CheckIfInputAxisisPressed()
