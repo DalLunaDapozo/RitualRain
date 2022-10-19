@@ -1,17 +1,23 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public event EventHandler BackToBathroom;
 
     private PlayerAnimations animations;
     private PlayerMovement movement;
 
     [SerializeField] private Transform ritual_spawn_point;
     [SerializeField] private Transform mirror_world_spawn_point;
+    [SerializeField] private SpriteRenderer sprite;
 
     public bool can_fall;
-
+    public bool is_hidden;
+    public bool is_well_hidden;
+    
     private void Awake()
     {
         animations = GetComponent<PlayerAnimations>();
@@ -56,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(animations.animator.GetCurrentAnimatorStateInfo(0).length);
 
-        SceneController.instance.PlayAnimation("fade_in");
+        SceneController.instance.PlayAnimation("fade_in", 1f);
 
  
 
@@ -64,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         TeleportPlayer(spawn_point.position);
 
-        SceneController.instance.PlayAnimation("fade_out");
+        SceneController.instance.PlayAnimation("fade_out", 1f);
 
         yield return new WaitForSeconds(animations.animator.GetCurrentAnimatorStateInfo(0).length + 1f);
        
@@ -83,6 +89,11 @@ public class PlayerController : MonoBehaviour
         transform.position = newPos;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("BackToBath")) BackToBathroom?.Invoke(this, EventArgs.Empty); 
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("MirrorWorld_1") ||
@@ -90,9 +101,6 @@ public class PlayerController : MonoBehaviour
            collision.CompareTag("MirrorWorld_3")) can_fall = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("MirrorWorld_1") ||
@@ -102,6 +110,21 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("MirrorWorld_death") && can_fall) StartCoroutine(OnDeath("Fall", mirror_world_spawn_point));
     }
-  
+
+    public void PlayAnimation(string animation)
+    {
+        animations.animator.Play(animation);
+    }
+
+    public void TriggerSpawnAnimation()
+    {
+        animations.animator.SetTrigger("spawn");
+    }
+
+    public void ToggleSprite(bool value)
+    {
+        sprite.gameObject.SetActive(value);
+    }
+
 }
 

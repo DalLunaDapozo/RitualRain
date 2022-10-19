@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: 8c9d84f6c4ce64541af79f1c543313c8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Haley_Monster_Land_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 13
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552e19a15cd04a446812947e4141b9fa
+      internalID: -697724856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 4
+        width: 87
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97da5b64850d3a945b51d3bdec2a8e68
+      internalID: -335149093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e13d86c08db5964eb46980286c3646b
+      internalID: -1239063323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71642c16531a35844b40c4faf6c0fe9e
+      internalID: -41814706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19526027f07b96f4586faefad32c4160
+      internalID: -483411245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_5
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509af9799452de040932b171c20fdfc4
+      internalID: -1525764163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_6
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d616803fd836fa349bf24f0d29b3b6e8
+      internalID: -800689361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_7
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0d0e9f490bef84e8abaeda443d7d84
+      internalID: -988346058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_8
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d516399162ac1da479e88d3e5d4483f8
+      internalID: 1697785767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_9
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ce37fda083d194bafdc624c01455ca
+      internalID: -669537776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_10
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2388ddade1e3f2e44b1cb31159fb16d1
+      internalID: 2092978065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_11
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05cbeb42cb9c814795759d04cf6a3bf
+      internalID: -2136012072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_12
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972e864355d45a0498543bf333798f6a
+      internalID: 26325603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_13
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c771c0175073a19418ccde5520be3b3b
+      internalID: 304782641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_14
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 4
+        width: 87
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5592121d3009d894bb2ed9bdd421ecdb
+      internalID: -1418960258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_15
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48a0bec090b988419b79495fe151083
+      internalID: -822246100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_16
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b463f42cc64a2740ab1d2d232453d83
+      internalID: -1091621886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_17
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3aa9d0ddb17cc4da6fa230ac3e9bec
+      internalID: -741916344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_18
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937387d66e0861a418f2e5edafd712df
+      internalID: 1322221790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_19
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2554c2b2f019bfb418641c694c3e1dcc
+      internalID: -1497751693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_20
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8615fbb6a8760c04e9910d7744fb2fee
+      internalID: 732613624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_21
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5353eb9a0a27458438b0ef910f41bb57
+      internalID: 1897385711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_22
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866f37e16462f5a47b04d3abd16eae19
+      internalID: 1077226788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_23
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391de440bc3e0fe45a3232ed0b15d08e
+      internalID: -1630720898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_24
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5192460b62289414f9c1a568b7e53279
+      internalID: -1590734566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_25
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 3
+        width: 87
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a4356ec07053d4b9d8dbbeb48f7106
+      internalID: -1926359099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_26
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafe4119c91b7314c8d39f758f9b1730
+      internalID: 1457799580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_27
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 3
+        width: 87
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3dce2f90ef6754aadfa8d88dc0ff88
+      internalID: -95604180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_28
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219b22ae1eb18be4ba8f46e00632348b
+      internalID: 404600305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_29
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9582f978db0a82489e0c6442f733598
+      internalID: -543360133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_30
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 3
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8e70634aa41734b8514671b8944977
+      internalID: 1954598286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haley_Monster_Land_31
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 4
+        width: 87
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e29588948cffc40853aa13c59059ac
+      internalID: -245657941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Haley_Monster_Land_3: -41814706
+      Haley_Monster_Land_2: -1239063323
+      Haley_Monster_Land_15: -822246100
+      Haley_Monster_Land_20: 732613624
+      Haley_Monster_Land_1: -335149093
+      Haley_Monster_Land_19: -1497751693
+      Haley_Monster_Land_5: -1525764163
+      Haley_Monster_Land_29: -543360133
+      Haley_Monster_Land_4: -483411245
+      Haley_Monster_Land_0: -697724856
+      Haley_Monster_Land_27: -95604180
+      Haley_Monster_Land_16: -1091621886
+      Haley_Monster_Land_26: 1457799580
+      Haley_Monster_Land_7: -988346058
+      Haley_Monster_Land_8: 1697785767
+      Haley_Monster_Land_31: -245657941
+      Haley_Monster_Land_17: -741916344
+      Haley_Monster_Land_25: -1926359099
+      Haley_Monster_Land_23: -1630720898
+      Haley_Monster_Land_24: -1590734566
+      Haley_Monster_Land_32: -50752409
+      Haley_Monster_Land_30: 1954598286
+      Haley_Monster_Land_12: 26325603
+      Haley_Monster_Land_9: -669537776
+      Haley_Monster_Land_33: -1457415201
+      Haley_Monster_Land_18: 1322221790
+      Haley_Monster_Land_6: -800689361
+      Haley_Monster_Land_22: 1077226788
+      Haley_Monster_Land_28: 404600305
+      Haley_Monster_Land_10: 2092978065
+      Haley_Monster_Land_13: 304782641
+      Haley_Monster_Land_11: -2136012072
+      Haley_Monster_Land_21: 1897385711
+      Haley_Monster_Land_14: -1418960258
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

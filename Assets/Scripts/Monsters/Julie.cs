@@ -11,6 +11,11 @@ public class Julie : MonoBehaviour
 
     private bool mazeDone;
 
+    private void Awake()
+    {
+        player.BackToBathroom += TeleportBackToBathroom;
+    }
+
     private void Start()
     {
         DialogueManager.GetInstance().On_Dialogue_Exit += On_Close_Dialogue;
@@ -19,23 +24,34 @@ public class Julie : MonoBehaviour
     private void On_Close_Dialogue(object sender, EventArgs e)
     {
         bool hasSaidYesToMirror = ((Ink.Runtime.BoolValue)DialogueManager.GetInstance().GetVariableState("mirror")).value;
-        if (hasSaidYesToMirror) StartCoroutine(TeleportPlayerToMirrorWorld());
+        if (hasSaidYesToMirror) StartCoroutine(TeleportPlayer(spawnPointMirrorWorld));
     }
 
 
-    private IEnumerator TeleportPlayerToMirrorWorld()
+    private void TeleportBackToBathroom(object sender, EventArgs e)
+    {
+        mazeDone = true;
+        StartCoroutine(TeleportPlayer(spawnPointBathroom));
+   
+    }
+
+    private IEnumerator TeleportPlayer(Transform teleport_to)
     {
         InputManager.GetInstance().DisableInput();
 
-        SceneController.instance.PlayAnimation("fade_in");
+        InputManager.GetInstance().SetMovementToZero();
+
+        SceneController.instance.PlayAnimation("fade_in", 1f);
 
         yield return new WaitForSeconds(SceneController.instance.anim.GetCurrentAnimatorStateInfo(0).length + 2f);
 
-        player.TeleportPlayer(spawnPointMirrorWorld.position);
-        SceneController.instance.PlayAnimation("fade_out");
+        player.TeleportPlayer(teleport_to.position);
+        SceneController.instance.PlayAnimation("fade_out", 1f);
 
         yield return new WaitForSeconds(SceneController.instance.anim.GetCurrentAnimatorStateInfo(0).length);
 
         InputManager.GetInstance().EnableInput();
+
+        if (mazeDone) Destroy(gameObject);
     }
 }

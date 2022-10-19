@@ -93,8 +93,9 @@ public class SceneController : MonoBehaviour
         }
     }
     
-    public void PlayAnimation(string name)
+    public void PlayAnimation(string name, float multiplier)
     {
+        anim.SetFloat("fade_in_speed", multiplier);
         anim.Play(name);
     }
 

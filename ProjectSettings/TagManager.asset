@@ -23,6 +23,7 @@ TagManager:
   - MirrorWorld_1
   - MirrorWorld_3
   - MirrorWorld_death
+  - BackToBath
   layers:
   - Default
   - TransparentFX
