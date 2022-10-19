@@ -13,9 +13,9 @@ Hi... :)
 
 === main ===
 
-I want to play hide & seek
+I want to play hide and seek
 
-I count to {countTimeBeforePlay} & you find a place to hide  
+I count to {countTimeBeforePlay} and you find a place to hide  
 
 ->Question
 
