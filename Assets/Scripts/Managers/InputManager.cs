@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
     private static InputManager instance;
     private PlayerInputActions input;
 
-    public EventHandler on_spawn_pressed;
+    public event EventHandler on_interact_pressed;
 
     private void Awake()
     {
@@ -29,6 +29,18 @@ public class InputManager : MonoBehaviour
     {
         input.Enable();
     }
+    public void Enable_Movement_Lighter()
+    {
+        input.Gameplay.Movement.Enable();
+        input.Gameplay.Lighter.Enable();
+    }
+
+    public void Disable_Movement_Lighter()
+    {
+        input.Gameplay.Movement.Disable();
+        input.Gameplay.Lighter.Disable();
+    }
+
     public void DisableInput()
     {
         input.Disable();
@@ -58,7 +70,10 @@ public class InputManager : MonoBehaviour
     public void InteractButtonPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
+        {
             interactPressed = true;
+            on_interact_pressed?.Invoke(this, EventArgs.Empty);
+        }
         if(context.canceled)
             interactPressed = false;
     }

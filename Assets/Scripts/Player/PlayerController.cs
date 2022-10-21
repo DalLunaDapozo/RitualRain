@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform ritual_spawn_point;
     [SerializeField] private Transform mirror_world_spawn_point;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private SpriteRenderer lighter;
 
     public bool can_fall;
     public bool is_hidden;
@@ -124,6 +125,15 @@ public class PlayerController : MonoBehaviour
     public void ToggleSprite(bool value)
     {
         sprite.gameObject.SetActive(value);
+    }
+
+    public void Toggle_hide(bool a)
+    {
+        sprite.gameObject.SetActive(a);
+        lighter.gameObject.SetActive(a);
+
+        if (a) InputManager.GetInstance().Enable_Movement_Lighter();
+        else InputManager.GetInstance().Disable_Movement_Lighter();
     }
 
 }

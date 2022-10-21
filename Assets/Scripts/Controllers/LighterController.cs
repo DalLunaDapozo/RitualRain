@@ -8,13 +8,14 @@ public class LighterController : MonoBehaviour
 
     private void Start()
     {
+        fireSprite.gameObject.SetActive(false);
         CheckIfOn(fireSprite);
     }
 
     private void Update()
     {
         SwitchLightBool();
-        TurnLightSpriteOnOff();
+        CheckIfOn(fireSprite);
     }
 
     private void CheckIfOn(GameObject fire)
@@ -25,22 +26,17 @@ public class LighterController : MonoBehaviour
             lightIsOn = false;
     }
 
-    private void TurnLightSpriteOnOff()
+    public void SetLighter(bool a)
     {
-        if (lightIsOn)
-            fireSprite.SetActive(true);
-        else
-            fireSprite.SetActive(false);
+        fireSprite.SetActive(a);
     }
 
     private void SwitchLightBool()
     {
         if (InputManager.GetInstance().GetLighterPressed())
-        { 
-            if (lightIsOn)
-                lightIsOn = false;
-            else
-                lightIsOn = true;
+        {
+            if (fireSprite.activeSelf) SetLighter(false);
+            else SetLighter(true);
         }
     }
 }
