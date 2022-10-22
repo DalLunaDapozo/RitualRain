@@ -24,6 +24,7 @@ TagManager:
   - MirrorWorld_3
   - MirrorWorld_death
   - BackToBath
+  - chain
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - Background
   - Mirror
   - Player
-  - 
+  - Chain
   - 
   - 
   - 

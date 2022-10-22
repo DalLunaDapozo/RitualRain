@@ -14,58 +14,35 @@ public class Greg : MonoBehaviour
     public event EventHandler player_is_not_well_hidden;
 
     private bool hasListened = false;
-    private bool hasCounted = false;
 
-    private bool you_didnt_hide;
-
-    public int count;
-
-    private void Start()
+    private void Awake()
     {
-        you_didnt_hide = false;
-        ((Ink.Runtime.IntValue)DialogueManager.
-        GetInstance().GetVariableState("countTimeBeforePlay")).value = count;
+        player.on_player_hidden += Start_Hide_Seek;
     }
 
     private void Update()
     {
         bool hasSaidYesToHide = ((Ink.Runtime.BoolValue)DialogueManager.
-        GetInstance().GetVariableState("hide")).value;
-
+        GetInstance().GetVariableState("game_accepted")).value;
 
         if (!hasListened && hasSaidYesToHide)
         {
-            StartCoroutine(CountSequence());
             Debug.Log("EMPIEZA EL JUEGO");
             hasListened = true;
         }
-
-        if (hasCounted)
-        {
-            if (player.is_hidden)
-            {
-                if (!player.is_well_hidden) player_is_not_well_hidden?.Invoke(this, EventArgs.Empty);
-                else player_is_well_hidden?.Invoke(this, EventArgs.Empty);
-            }
-            else you_didnt_hide = true;
-
-            hasCounted = false;
-        }
     }
 
-    private IEnumerator CountSequence()
+    private void Start_Hide_Seek(object sender, EventArgs e)
     {
-        cue.SetActive(false);
-        numberPopUp.gameObject.SetActive(true);
-    
-        while (count > -1)
+        if (!player.is_well_hidden)
         {
-            numberPopUp.text = count--.ToString();
-            yield return new WaitForSeconds(1f);
+            player_is_not_well_hidden?.Invoke(this, EventArgs.Empty);
+        } 
+        else
+        {
+            player_is_well_hidden?.Invoke(this, EventArgs.Empty);
         }
-
-        numberPopUp.gameObject.SetActive(false);
-      
-        hasCounted = true;
+           
     }
+
 }

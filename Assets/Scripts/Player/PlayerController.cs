@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public event EventHandler BackToBathroom;
+    public event EventHandler on_player_hidden;
 
     private PlayerAnimations animations;
     private PlayerMovement movement;
@@ -133,7 +134,12 @@ public class PlayerController : MonoBehaviour
         lighter.gameObject.SetActive(a);
 
         if (a) InputManager.GetInstance().Enable_Movement_Lighter();
-        else InputManager.GetInstance().Disable_Movement_Lighter();
+        else
+        {
+            InputManager.GetInstance().Disable_Movement_Lighter();
+            on_player_hidden?.Invoke(this, EventArgs.Empty);
+        }
+        
     }
 
 }

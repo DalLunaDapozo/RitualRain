@@ -1,8 +1,8 @@
 INCLUDE globals.ink
 
 
-{alreadySaidHi == false: -> Hi | -> main} 
-
+{alreadySaidHi == false: -> Hi} 
+{game_accepted == true: -> game_in_motion | -> main}
 === Hi ===
 
 Hi... :)
@@ -15,7 +15,11 @@ Hi... :)
 
 I want to play hide and seek
 
-I count to {countTimeBeforePlay} and you find a place to hide  
+You find a place to hide and I will look for you
+
+Try to find a good place
+
+If you do not hide I won't look for you
 
 ->Question
 
@@ -29,7 +33,7 @@ What do you say ?
     
     I will start now
         
-    ~hide = true
+    ~game_accepted = true
     
     -> END
     
@@ -47,7 +51,13 @@ What do you say ?
     :(
     
     -> END
-    
+
+=== game_in_motion ===
+
+Go find a place to hide 
+
+-> END
+
 === alreadyPlayed ===
 
 That was fun
